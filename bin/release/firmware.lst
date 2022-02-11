@@ -1,5 +1,5 @@
 
-/home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/firmware.elf:     file format elf32-littlearm
+/home/ismoil/tmp/blink_cmsis/build/build-blink_cmsis-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/firmware.elf:     file format elf32-littlearm
 
 
 Disassembly of section .isr_vector:

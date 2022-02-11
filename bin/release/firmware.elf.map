@@ -137,10 +137,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
  .data          0x0000000000000000        0x0 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
  .bss           0x0000000000000000        0x0 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
- .text.SystemCoreClockUpdate
-                0x0000000000000000       0x54 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
- .rodata.AHBPrescTable
-                0x0000000000000000       0x10 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
  .rodata.APBPrescTable
                 0x0000000000000000        0x8 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
  .text          0x0000000000000000       0x14 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
@@ -188,7 +184,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
-.text           0x000000000800010c      0x350
+.text           0x000000000800010c      0x3a8
                 0x000000000800010c                . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -228,142 +224,148 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/
                 0x0000000008000360       0x20 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
                 0x0000000008000360                GPIO_Init
  .text.startup.main
-                0x0000000008000380       0x64 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
+                0x0000000008000380       0x68 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
                 0x0000000008000380                main
  .text.SysTick_Handler
-                0x00000000080003e4       0x10 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
-                0x00000000080003e4                SysTick_Handler
+                0x00000000080003e8       0x10 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
+                0x00000000080003e8                SysTick_Handler
  .text.SystemInit
-                0x00000000080003f4        0x2 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
-                0x00000000080003f4                SystemInit
- *fill*         0x00000000080003f6        0x2 
+                0x00000000080003f8        0x2 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
+                0x00000000080003f8                SystemInit
+ *fill*         0x00000000080003fa        0x2 
+ .text.SystemCoreClockUpdate
+                0x00000000080003fc       0x54 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
+                0x00000000080003fc                SystemCoreClockUpdate
  .text.Reset_Handler
-                0x00000000080003f8       0x48 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
-                0x00000000080003f8                Reset_Handler
+                0x0000000008000450       0x48 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
+                0x0000000008000450                Reset_Handler
  .text.Default_Handler
-                0x0000000008000440        0x2 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
-                0x0000000008000440                RTC_Alarm_IRQHandler
-                0x0000000008000440                EXTI2_IRQHandler
-                0x0000000008000440                DebugMon_Handler
-                0x0000000008000440                TIM1_CC_IRQHandler
-                0x0000000008000440                HardFault_Handler
-                0x0000000008000440                PVD_IRQHandler
-                0x0000000008000440                PendSV_Handler
-                0x0000000008000440                NMI_Handler
-                0x0000000008000440                EXTI3_IRQHandler
-                0x0000000008000440                EXTI0_IRQHandler
-                0x0000000008000440                I2C2_EV_IRQHandler
-                0x0000000008000440                UsageFault_Handler
-                0x0000000008000440                ADC1_2_IRQHandler
-                0x0000000008000440                SPI1_IRQHandler
-                0x0000000008000440                TAMPER_IRQHandler
-                0x0000000008000440                DMA1_Channel4_IRQHandler
-                0x0000000008000440                USART3_IRQHandler
-                0x0000000008000440                RTC_IRQHandler
-                0x0000000008000440                DMA1_Channel7_IRQHandler
-                0x0000000008000440                CAN1_RX1_IRQHandler
-                0x0000000008000440                TIM4_IRQHandler
-                0x0000000008000440                I2C1_EV_IRQHandler
-                0x0000000008000440                DMA1_Channel6_IRQHandler
-                0x0000000008000440                TIM3_IRQHandler
-                0x0000000008000440                RCC_IRQHandler
-                0x0000000008000440                TIM1_TRG_COM_IRQHandler
-                0x0000000008000440                DMA1_Channel1_IRQHandler
-                0x0000000008000440                Default_Handler
-                0x0000000008000440                EXTI15_10_IRQHandler
-                0x0000000008000440                EXTI9_5_IRQHandler
-                0x0000000008000440                SPI2_IRQHandler
-                0x0000000008000440                MemManage_Handler
-                0x0000000008000440                SVC_Handler
-                0x0000000008000440                DMA1_Channel5_IRQHandler
-                0x0000000008000440                EXTI4_IRQHandler
-                0x0000000008000440                USB_LP_CAN1_RX0_IRQHandler
-                0x0000000008000440                USB_HP_CAN1_TX_IRQHandler
-                0x0000000008000440                DMA1_Channel3_IRQHandler
-                0x0000000008000440                TIM1_UP_IRQHandler
-                0x0000000008000440                WWDG_IRQHandler
-                0x0000000008000440                TIM2_IRQHandler
-                0x0000000008000440                TIM1_BRK_IRQHandler
-                0x0000000008000440                EXTI1_IRQHandler
-                0x0000000008000440                USART2_IRQHandler
-                0x0000000008000440                I2C2_ER_IRQHandler
-                0x0000000008000440                DMA1_Channel2_IRQHandler
-                0x0000000008000440                CAN1_SCE_IRQHandler
-                0x0000000008000440                FLASH_IRQHandler
-                0x0000000008000440                BusFault_Handler
-                0x0000000008000440                USART1_IRQHandler
-                0x0000000008000440                I2C1_ER_IRQHandler
-                0x0000000008000440                USBWakeUp_IRQHandler
+                0x0000000008000498        0x2 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
+                0x0000000008000498                RTC_Alarm_IRQHandler
+                0x0000000008000498                EXTI2_IRQHandler
+                0x0000000008000498                DebugMon_Handler
+                0x0000000008000498                TIM1_CC_IRQHandler
+                0x0000000008000498                HardFault_Handler
+                0x0000000008000498                PVD_IRQHandler
+                0x0000000008000498                PendSV_Handler
+                0x0000000008000498                NMI_Handler
+                0x0000000008000498                EXTI3_IRQHandler
+                0x0000000008000498                EXTI0_IRQHandler
+                0x0000000008000498                I2C2_EV_IRQHandler
+                0x0000000008000498                UsageFault_Handler
+                0x0000000008000498                ADC1_2_IRQHandler
+                0x0000000008000498                SPI1_IRQHandler
+                0x0000000008000498                TAMPER_IRQHandler
+                0x0000000008000498                DMA1_Channel4_IRQHandler
+                0x0000000008000498                USART3_IRQHandler
+                0x0000000008000498                RTC_IRQHandler
+                0x0000000008000498                DMA1_Channel7_IRQHandler
+                0x0000000008000498                CAN1_RX1_IRQHandler
+                0x0000000008000498                TIM4_IRQHandler
+                0x0000000008000498                I2C1_EV_IRQHandler
+                0x0000000008000498                DMA1_Channel6_IRQHandler
+                0x0000000008000498                TIM3_IRQHandler
+                0x0000000008000498                RCC_IRQHandler
+                0x0000000008000498                TIM1_TRG_COM_IRQHandler
+                0x0000000008000498                DMA1_Channel1_IRQHandler
+                0x0000000008000498                Default_Handler
+                0x0000000008000498                EXTI15_10_IRQHandler
+                0x0000000008000498                EXTI9_5_IRQHandler
+                0x0000000008000498                SPI2_IRQHandler
+                0x0000000008000498                MemManage_Handler
+                0x0000000008000498                SVC_Handler
+                0x0000000008000498                DMA1_Channel5_IRQHandler
+                0x0000000008000498                EXTI4_IRQHandler
+                0x0000000008000498                USB_LP_CAN1_RX0_IRQHandler
+                0x0000000008000498                USB_HP_CAN1_TX_IRQHandler
+                0x0000000008000498                DMA1_Channel3_IRQHandler
+                0x0000000008000498                TIM1_UP_IRQHandler
+                0x0000000008000498                WWDG_IRQHandler
+                0x0000000008000498                TIM2_IRQHandler
+                0x0000000008000498                TIM1_BRK_IRQHandler
+                0x0000000008000498                EXTI1_IRQHandler
+                0x0000000008000498                USART2_IRQHandler
+                0x0000000008000498                I2C2_ER_IRQHandler
+                0x0000000008000498                DMA1_Channel2_IRQHandler
+                0x0000000008000498                CAN1_SCE_IRQHandler
+                0x0000000008000498                FLASH_IRQHandler
+                0x0000000008000498                BusFault_Handler
+                0x0000000008000498                USART1_IRQHandler
+                0x0000000008000498                I2C1_ER_IRQHandler
+                0x0000000008000498                USBWakeUp_IRQHandler
  *(.glue_7)
- .glue_7        0x0000000008000442        0x0 linker stubs
+ .glue_7        0x000000000800049a        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000442        0x0 linker stubs
+ .glue_7t       0x000000000800049a        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x0000000008000442        0x2 
- .eh_frame      0x0000000008000444        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x000000000800049a        0x2 
+ .eh_frame      0x000000000800049c        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008000444        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crti.o
-                0x0000000008000444                _init
- .init          0x0000000008000448        0x8 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtn.o
+ .init          0x000000000800049c        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crti.o
+                0x000000000800049c                _init
+ .init          0x00000000080004a0        0x8 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008000450        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crti.o
-                0x0000000008000450                _fini
- .fini          0x0000000008000454        0x8 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtn.o
-                0x000000000800045c                . = ALIGN (0x4)
-                0x000000000800045c                _etext = .
+ .fini          0x00000000080004a8        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crti.o
+                0x00000000080004a8                _fini
+ .fini          0x00000000080004ac        0x8 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtn.o
+                0x00000000080004b4                . = ALIGN (0x4)
+                0x00000000080004b4                _etext = .
 
-.vfp11_veneer   0x000000000800045c        0x0
- .vfp11_veneer  0x000000000800045c        0x0 linker stubs
+.vfp11_veneer   0x00000000080004b4        0x0
+ .vfp11_veneer  0x00000000080004b4        0x0 linker stubs
 
-.v4_bx          0x000000000800045c        0x0
- .v4_bx         0x000000000800045c        0x0 linker stubs
+.v4_bx          0x00000000080004b4        0x0
+ .v4_bx         0x00000000080004b4        0x0 linker stubs
 
-.iplt           0x000000000800045c        0x0
- .iplt          0x000000000800045c        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x00000000080004b4        0x0
+ .iplt          0x00000000080004b4        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x000000000800045c        0x4
-                0x000000000800045c                . = ALIGN (0x4)
+.rodata         0x00000000080004b4       0x14
+                0x00000000080004b4                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x000000000800045c        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-impure.o)
-                0x000000000800045c                _global_impure_ptr
-                0x0000000008000460                . = ALIGN (0x4)
+                0x00000000080004b4        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-impure.o)
+                0x00000000080004b4                _global_impure_ptr
+ .rodata.AHBPrescTable
+                0x00000000080004b8       0x10 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
+                0x00000000080004b8                AHBPrescTable
+                0x00000000080004c8                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008000460        0x0
- .rel.iplt      0x0000000008000460        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x00000000080004c8        0x0
+ .rel.iplt      0x00000000080004c8        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000000008000460        0x0
-                0x0000000008000460                __exidx_start = .
+.ARM            0x00000000080004c8        0x0
+                0x00000000080004c8                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008000460                __exidx_end = .
+                0x00000000080004c8                __exidx_end = .
 
-.preinit_array  0x0000000008000460        0x0
-                0x0000000008000460                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000080004c8        0x0
+                0x00000000080004c8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008000460                PROVIDE (__preinit_array_end = .)
+                0x00000000080004c8                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000008000460        0x8
-                0x0000000008000460                PROVIDE (__init_array_start = .)
+.init_array     0x00000000080004c8        0x8
+                0x00000000080004c8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0000000008000460        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x00000000080004c8        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0000000008000464        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
-                0x0000000008000468                PROVIDE (__init_array_end = .)
+ .init_array    0x00000000080004cc        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
+                0x00000000080004d0                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008000468        0x4
-                0x0000000008000468                PROVIDE (__fini_array_start = .)
+.fini_array     0x00000000080004d0        0x4
+                0x00000000080004d0                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008000468        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
-                0x000000000800046c                PROVIDE (__fini_array_end = .)
-                0x000000000800046c                _sidata = LOADADDR (.data)
+ .fini_array    0x00000000080004d0        0x4 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
+                0x00000000080004d4                PROVIDE (__fini_array_end = .)
+                0x00000000080004d4                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x430 load address 0x000000000800046c
+.data           0x0000000020000000      0x430 load address 0x00000000080004d4
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -379,11 +381,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/
                 0x0000000020000430                . = ALIGN (0x4)
                 0x0000000020000430                _edata = .
 
-.igot.plt       0x0000000020000430        0x0 load address 0x000000000800089c
+.igot.plt       0x0000000020000430        0x0 load address 0x0000000008000904
  .igot.plt      0x0000000020000430        0x0 /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7-m/nofp/crtbegin.o
                 0x0000000020000430                . = ALIGN (0x4)
 
-.bss            0x0000000020000430       0x24 load address 0x000000000800089c
+.bss            0x0000000020000430       0x24 load address 0x0000000008000904
                 0x0000000020000430                _sbss = .
                 0x0000000020000430                __bss_start__ = _sbss
  *(.bss)
@@ -404,7 +406,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/
                 0x0000000020000454                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000454      0x604 load address 0x000000000800089c
+                0x0000000020000454      0x604 load address 0x0000000008000904
                 0x0000000020000458                . = ALIGN (0x8)
  *fill*         0x0000000020000454        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -517,6 +519,7 @@ SysTick_Handler                                   /home/ismoil/tmp/Blink/build/b
 SystemCoreClock                                   /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
                                                   /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
 SystemCoreClockUpdate                             /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
+                                                  /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/main.c.o
 SystemInit                                        /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/08e960b27d56c69f/system_stm32f1xx.c.o
                                                   /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o
 TAMPER_IRQHandler                                 /home/ismoil/tmp/Blink/build/build-Blink-Arm-Release/Release_Arm_dbeb73fd0113c977/firmware.9bcf18e4/3a52ce780950d4d9/startup_stm32f103xb.s.o

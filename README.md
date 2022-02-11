@@ -11,6 +11,7 @@ Building by qbs via Qt Creator or by __make__ in the terminal in the project dir
 make
 ```
 
+
 ## Flash
 Required utility __stlink__. On firmware directory:
 
